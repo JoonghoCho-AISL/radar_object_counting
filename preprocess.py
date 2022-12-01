@@ -17,22 +17,25 @@ from tqdm import tqdm
 import pickle as pkl
 
 label2idx_Dict = {
-                'asphalt' : 0,
-                # 'bicycle' : 1,
-                'brick' : 1,
-                'tile' : 2,
-                'sandbed' : 3,
-                'urethane' : 4,
+                '0' : 0,
+                '1' : 1,
+                '2' : 2,
+                '3' : 3,
+                '4' : 4,
+                '5' : 5,
+                '6' : 6,
             }
 
 idx2label_Dict = {
-    0 : 'asphalt',
-    # 1 : 'bicycle',
-    1 : 'brick',
-    2 : 'tile',
-    3 : 'sandbed',
-    4 : 'urethane',
+    0 : '0',
+    1 : '1',
+    2 : '2',
+    3 : '3',
+    4 : '4',
+    5 : '5',
+    6 : '6'
 }
+
 def createDirectory(directory):
     try:
         if not os.path.exists(directory):
